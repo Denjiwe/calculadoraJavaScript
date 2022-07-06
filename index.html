@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>    
+</head>
+<body>
+    <div class="background">
+        <div class="calculadora">
+            <h1>Calculadora</h1>
+            <p id="resultado"></p>
+
+            <table> <!-- botões da calculadora -->
+                <tr> <!-- Primeira linha -->
+                    <td><button onclick="clean()">C</button></td>
+                    <td><button onclick="porcentagem()">%</button></td>
+                    <td><button onclick="insert('/')">/</button></td>
+                    <td><button onclick="insert('*')">*</button></td>
+                </tr>
+
+                <tr> <!-- Segunda linha -->
+                    <td><button onclick="insert('7')">7</button></td>
+                    <td><button onclick="insert('8')">8</button></td>
+                    <td><button onclick="insert('9')">9</button></td>
+                    <td><button onclick="insert('-')">-</button></td>
+                </tr>
+
+                <tr> <!-- Terceira linha -->
+                    <td><button onclick="insert('4')">4</button></td>
+                    <td><button onclick="insert('5')">5</button></td>
+                    <td><button onclick="insert('6')">6</button></td>
+                    <td><button onclick="insert('+')">+</button></td>
+                </tr>
+
+                <tr> <!-- Quarta linha -->
+                    <td><button onclick="insert('1')">1</button></td>
+                    <td><button onclick="insert('2')">2</button></td>
+                    <td><button onclick="insert('3')">3</button></td>
+                    <td rowspan="2">
+                        <button style="height: 108px;" onclick="calcular()">=</button>
+                    </td>
+                </tr>
+
+                <tr> <!-- Quinta linha -->
+                    <td colspan="2">
+                        <button  onclick="insert('0')" style="width: 108px;">0</button>
+                    </td>
+                    <td><button onclick="insert('.')">.</button></td>
+                </tr>
+            </table> <!-- /botões da calculadora -->
+        </div> <!-- /calculadora -->
+    </div> <!-- /background -->
+</body>
+</html>
